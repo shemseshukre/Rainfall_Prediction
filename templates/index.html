@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Rainfall prediction</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="light-green lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Well Come To Rainfall Prediction Page </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Return to home</a></li>
+      </ul>
+
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+     <h5 style="text-align: center; color: brown; font-weight: 600;">{{pred}}</h5>
+      <h4 class="header center black-text">Well Come  This Page Predict Daily Rainfall Using Deep Learning in the Background</h4>
+      <div class="row center">
+        <h5 class="header col s12 light">Please Fill the Required Information in the Given Textfield!
+        <br>
+        </h5>
+      </div>
+
+      <div class="row">
+        <form action='/predict' method="post" class="col s12">
+            <div class="row">
+			<!-- 
+			<div class="input-field col s4">
+                    <label for="date" class="date"><b>Date</b></label>
+                    <br>
+                    <input placeholder="Current date" name="0" id="date" type="date" class="validate">
+                </div>
+				-->
+                <div class="input-field col s4">
+                    <label for="first_name"><b>Average Temperature</b></label>
+                    <br>
+                    <input placeholder="Average Temperature" name="1" id="first_name" type="text" class="validate">
+                </div>
+				
+                <div class="input-field col s4">
+                    <label for="last_name"><b>Wet Bulb Temperature </b></label>
+                    <br>
+                    <input id="last_name" name="2" placeholder="Wet Bulb Temperature"  type="text" class="validate">
+    
+                </div>
+    
+                <div class="input-field col s4">
+                    <label for="_name"><b>Max Temperature</b></label>
+                    <br>
+                    <input id="_name" name="3" placeholder="Max Temperature" type="text" class="validate">
+    
+                </div>
+                <div class="input-field col s4">
+                    <label for="first_name"><b>Air Pressure</b></label>
+                    <br>
+                    <input placeholder="Air Pressure" name="4" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                    <label for="last_name"><b>Wind Speed 9pm</b></label>
+                    <br>
+                    <input id="last_name" name="5" placeholder="Wind Speed 9pm"  type="text" class="validate">
+                </div>
+				
+                <div class="input-field col s4">
+                  <label ><b>Min Temperature</b></label>
+                  <br>
+                  <input name = '6' placeholder="Min Temperature">
+
+                </div>
+				
+				 <div class="input-field col s4">
+                  <label ><b>Max Wind Speed</b></label>
+                  <br>
+                  <input name = '7' placeholder="Max Wind Speed">
+
+                </div>
+				
+				<div class="input-field col s4">
+                  <label ><b>Temperature 9pm</b></label>
+                  <br>
+                  <input name = '8' placeholder="Temperature 9pm">
+
+                </div>
+				
+				<div class="input-field col s4">
+                  <label ><b>Humidity 3pm</b></label>
+                  <br>
+                  <input name = '9' placeholder="Humidity 3pm">
+
+                </div>
+				
+				
+                <div class="input-field col s4">
+                    <label for="last_name"><b>Dew Point</b></label>
+                    <br>
+                    <input id="last_name" name="10" placeholder="Dew Point"  type="text" class="validate">
+                </div>
+				
+                <div class="input-field col s4">
+                    <label for="_name"><b>Relative humidity</b></label>
+                    <br>
+                    <input id="_name" name="11" placeholder="Relative humidity" type="text" class="validate">
+                </div>
+				
+				<div class="input-field col s4">
+                    <label for="_name"><b>Wind Speed 3pm</b></label>
+                    <br>
+                    <input id="_name" name="12" placeholder="Wind Speed 3pm" type="text" class="validate">
+                </div>
+    
+          </div>
+    
+          <div class="row center">
+    
+              <button type="submit" class="btn-large waves-effect waves-light light-green">Submit and predict probability</button>
+
+          </div>
+        </form>
+  </div>
+
+      <br>
+
+     
+    <br><br>
+  </div>
+  </div>
+
+  <footer class="page-footer light-green">
+    <div class="footer-copyright">
+      <div class="container" style="padding-bottom: 1rem; position: fixed; font-size: 1.2rem; margin-left: 5rem;">
+        <p>&copy; Shemse Shukre</p>
+        <p>Shemseshukre@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
