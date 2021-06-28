@@ -10,7 +10,6 @@ scikit-learn>=0.18
 matplotlib>=1.4.3
 pandas>=0.19
 tensorflow>=2.5.0
-import tensorflow as ts
 Keras>=2.3.0
 
 
