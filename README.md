@@ -1,2 +1,2 @@
-# Diabetes-prediction-app-using-ML
-Predict diabetes using state of the art ML techniques
+# Rainfall-prediction-app-using-DL
+Predict Rainfall using state of the art DL Techniques
