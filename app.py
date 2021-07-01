@@ -61,7 +61,6 @@ def predict():
     else:
         return render_template('result.html',pred=f'Tomorrow Is Going to Be Sunny Day')
     #return render_template("predictor.html")
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__=='__main__':
+    main() 
+    
