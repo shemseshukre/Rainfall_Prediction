@@ -63,5 +63,9 @@ def predict():
     #return render_template("predictor.html")
 
     
-if __name__=='__main__':
-    app.run(host='0.0.0.0',port=8000)
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-p", "--port", type=int, default=8080)
+    args = parser.parse_args()
+    
+    start_server(predict, port=args.port)
