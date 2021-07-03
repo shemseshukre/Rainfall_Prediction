@@ -5,6 +5,7 @@ import pandas as pd
 from keras.models import load_model
 from sklearn.preprocessing import *
 
+
 app = Flask(__name__)
 
 #loading the SVM model and the preprocessor
