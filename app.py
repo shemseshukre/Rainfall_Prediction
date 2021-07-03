@@ -9,9 +9,9 @@ from sklearn.preprocessing import *
 app = Flask(__name__)
 
 #loading the SVM model and the preprocessor
-model = pickle.load(open("svm_model.pkl", "rb"))
+#model = pickle.load(open("svm_model.pkl", "rb"))
 #std = pickle.load(open('std.pkl','rb'))
-#model = load_model('lstm_model.h5')
+model = load_model('lstm_model.h5')
 
 #Index.html will be returned for the input
 @app.route('/')
